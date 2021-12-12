@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+  --orange-color: #d5872c;
+  --gray-color: #6c6e70;
+}
+
+html{
+    font: Lucida Console, monospace;
+    scroll-behavior: smooth;
+}
+
+.cover {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+} 
+
+.cover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: opacity(60%);
+}
+
+.white{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -15vw;
+    width: 50vw;
+    height: 90vh;
+    transform: skewX(-45deg);
+}
+.orange{
+    background-color: var(--orange-color);
+    position: absolute;
+    top: 0;
+    left: -10vw;
+    width: 20vw;
+    height: 20vw;
+    transform: skewX(-45deg);
+}
+
+.cover-logo{
+    position: absolute;
+    left: -2vw;
+    top: 10vh;
+    width: 40vw;
+    animation: aparition 4s;
+    z-index: 2;
+}
+
+@keyframes aparition {
+    0% {visibility: hidden;}
+    100% {visibility: visible;}
+}
+  
+
+
+/*-----------NAV----------------*/
+
+nav{
+    position: absolute;
+    bottom: 5vh;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--gray-color);
+    width: 100%;
+}
+
+nav ul li{
+    float: left;
+    min-width: 10%;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 3.5vh 3vh;
+    font-size: 3vh;
+}
+
+nav ul li a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: var(--orange-color);
+  cursor: pointer;
+}
+.nav{
+  background-color: var(--gray-color);
+}
+.nav_active {
+    background-color: var(--orange-color);
+} 
+
+
+
+
+@media only screen and (max-device-width: 980px){
+
+  .cover{
+    height: 93.5vh;
+    font-size: 12px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+  padding: 2vh 0 2vh;
+}
+}
