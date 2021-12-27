@@ -8,12 +8,12 @@
 }
 
 html{
-    font: Lucida Console, monospace;
+    font: Andor Console, monospace;
     scroll-behavior: smooth;
 }
 
 .cover {
-    font-family: "Poppins", sans-serif;
+    font-family: "AndorRegular", sans-serif;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -34,19 +34,22 @@ html{
     background-color: white;
     position: absolute;
     top: 0;
-    left: -15vw;
+    
     width: 50vw;
     height: 90vh;
     transform: skewX(-45deg);
+    animation: moverightw 2s;
+    left: -15vw;
 }
 .orange{
     background-color: var(--orange-color);
     position: absolute;
     top: 0;
-    left: -10vw;
     width: 20vw;
     height: 20vw;
     transform: skewX(-45deg);
+    animation: moverighto 2.5s;
+    left: -10vw;
 }
 
 .cover-logo{
@@ -59,10 +62,19 @@ html{
 }
 
 @keyframes aparition {
-    0% {visibility: hidden;}
-    100% {visibility: visible;}
+    0% {    filter:opacity(0);}
+    100% {    filter:opacity(1);}
 }
   
+@keyframes moverightw {
+    0% { left: -50vw;}
+    100% { left: -15vw;}
+}
+@keyframes moverighto {
+    0% { left: -50vw;}
+    100% { left: -10vw;}
+}
+
 
 
 /*-----------NAV----------------*/
