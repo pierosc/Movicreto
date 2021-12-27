@@ -14,7 +14,7 @@ html{
 
 .cover {
     font-family: "AndorRegular", sans-serif;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: relative;
 } 
@@ -30,18 +30,26 @@ html{
     filter: opacity(60%);
 }
 
-.white{
+.white-left{
     background-color: white;
     position: absolute;
     top: 0;
-    
     width: 50vw;
     height: 90vh;
     transform: skewX(-45deg);
     animation: moverightw 2s;
     left: -15vw;
 }
-.orange{
+.white-right{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 90vh;
+    transform: skewX(45deg);
+    left: 140vw;
+}
+.orange-left{
     background-color: var(--orange-color);
     position: absolute;
     top: 0;
@@ -70,6 +78,21 @@ html{
     0% { left: -50vw;}
     100% { left: -15vw;}
 }
+
+@keyframes moveleftw {
+    0% { left: -15vw;}
+    100% { left: -50vw;}
+}
+
+@keyframes wr_left {
+    0% { left: 140vw;}
+    100% { left: 60vw;}
+}
+@keyframes wr_right {
+    0% { left: 60vw;}
+    100% { left: 140vw;}
+}
+
 @keyframes moverighto {
     0% { left: -50vw;}
     100% { left: -10vw;}
