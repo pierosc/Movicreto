@@ -4,27 +4,36 @@ const nosotros = document.getElementById("nosotros");
 const servicios = document.getElementById("servicios");
 const contactanos = document.getElementById("contactanos");
 
+const homewhite = document.querySelector(".white-inicio");
+const homeorg = document.querySelector(".orange-left");
 const white_left = document.querySelector(".white-left");
 const white_right = document.querySelector(".white-right");
+const nav = document.querySelector(".nav-container");
 
 inicio.addEventListener("click", () =>{
-    let scrollpos = document.documentElement.scrollTop;
-    var inicioabout = scrollpos + aboutsection.getBoundingClientRect().top - 69;
-    scroll(0,inicioabout);
+    homewhite.style.animation = "homein 2s normal both";
+    homeorg.style.animation = "homeino 2s normal both";
+    white_left.style.animation = "wl_left 2s normal both";
+    white_right.style.animation = "wr_right 2s normal both";
+    nav.style.animation = "navtop 2s normal both";
 });
   
 nosotros.addEventListener("click", () =>{
-    white_left.style.animation = "moveleftw 2s normal both";
+    homewhite.style.animation = "homeout 2s normal both";
+    homeorg.style.animation = "homeouto 2s normal both";
+    white_left.style.animation = "wl_left 2s normal both";
     white_right.style.animation = "wr_left 2s normal both";
+    nav.style.animation = "navbot 2s normal both";
 });
   
 servicios.addEventListener("click", () =>{
-    white_left.style.animation = "moverightw 2s normal both";
+    homewhite.style.animation = "homeout 2s normal both";
+    homeorg.style.animation = "homeouto 2s normal both";
+    white_left.style.animation = "wl_right 2s normal both";
     white_right.style.animation = "wr_right 2s normal both";
+    nav.style.animation = "navbot 2s normal both";
 });  
   
 contactanos.addEventListener("click", () =>{
-    let scrollpos = document.documentElement.scrollTop;
-    var iniciosocial = scrollpos + socialsection.getBoundingClientRect().top - 69;
-    scroll(0, iniciosocial);
+
 });

@@ -14,9 +14,10 @@ html{
 
 .cover {
     font-family: "AndorRegular", sans-serif;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    overflow: hidden;
 } 
 
 .cover-img {
@@ -29,27 +30,19 @@ html{
     object-fit: cover;
     filter: opacity(60%);
 }
+/***********************************************************************/
 
-.white-left{
+.white-inicio{
     background-color: white;
     position: absolute;
     top: 0;
     width: 50vw;
     height: 90vh;
     transform: skewX(-45deg);
-    animation: moverightw 2s;
+    animation: homein 2s;
     left: -15vw;
 }
-.white-right{
-    background-color: white;
-    position: absolute;
-    top: 0;
-    width: 50vw;
-    height: 90vh;
-    transform: skewX(45deg);
-    left: 140vw;
-}
-.orange-left{
+.orange-inicio{
     background-color: var(--orange-color);
     position: absolute;
     top: 0;
@@ -57,6 +50,37 @@ html{
     height: 20vw;
     transform: skewX(-45deg);
     animation: moverighto 2.5s;
+    left: -10vw;
+}
+/*****/
+.white-left{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 70vw;
+    height: 90vh;
+    transform: skewX(-20deg);
+    left: -150vw;
+}
+
+.white-right{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 70vw;
+    height: 90vh;
+    transform: skewX(20deg);
+    left: 140vw;
+}
+
+.orange-left{
+    background-color: var(--orange-color);
+    position: absolute;
+    top: 0;
+    width: 20vw;
+    height: 20vw;
+    transform: skewX(-45deg);
+    animation: homeino 2.5s;
     left: -10vw;
 }
 
@@ -73,36 +97,51 @@ html{
     0% {    filter:opacity(0);}
     100% {    filter:opacity(1);}
 }
-  
-@keyframes moverightw {
-    0% { left: -50vw;}
+/**********************************************/
+/*Triangulo blanco del inicio*/
+@keyframes homein {
+    0% { left: -85vw;}
     100% { left: -15vw;}
 }
-
-@keyframes moveleftw {
+@keyframes homeout {
     0% { left: -15vw;}
-    100% { left: -50vw;}
+    100% { left: -85vw;}
 }
-
-@keyframes wr_left {
-    0% { left: 140vw;}
-    100% { left: 60vw;}
-}
-@keyframes wr_right {
-    0% { left: 60vw;}
-    100% { left: 140vw;}
-}
-
-@keyframes moverighto {
+/*Triangulo naranja del inicio*/
+@keyframes homeino {
     0% { left: -50vw;}
     100% { left: -10vw;}
 }
+@keyframes homeouto {
+    0% { left: -10vw;}
+    100% { left: -50vw;}
+}
+/*Diagonal blanca izquierda*/
+@keyframes wl_right {
+    0% { left: -85vw;}
+    100% { left: -15vw;}
+}
+@keyframes wl_left {
+    0% { left: -15vw;}
+    100% { left: -85vw;}
+}
+/*Diagonal blanca derecha*/
+@keyframes wr_left {
+    0% { left: 140vw;}
+    100% { left: 40vw;}
+}
+@keyframes wr_right {
+    0% { left: 40vw;}
+    100% { left: 140vw;}
+}
+
+
 
 
 
 /*-----------NAV----------------*/
 
-nav{
+.nav-container{
     position: absolute;
     bottom: 5vh;
     z-index: 1;
@@ -143,8 +182,14 @@ nav ul li a:hover{
     background-color: var(--orange-color);
 } 
 
-
-
+@keyframes navbot {
+    0% { bottom: 5vh;}
+    100% { bottom: 0vh;}
+}
+@keyframes navtop {
+    0% { bottom: 0vh;}
+    100% { bottom: 5vh;}
+}
 
 @media only screen and (max-device-width: 980px){
 
