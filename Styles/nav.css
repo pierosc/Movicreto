@@ -72,11 +72,20 @@ html{
     transform: skewX(20deg);
     left: 140vw;
 }
-
+.white-top{
+    position: absolute;
+    top: -90vh;
+    width: 70vw;
+    height: 90vh;
+    left: 10vw;
+    border-right: 5vw solid transparent;
+    border-left: 5vw solid transparent;
+    border-top: 90vh solid white;
+}
 .orange-left{
     background-color: var(--orange-color);
     position: absolute;
-    top: 0;
+    top: 0vh;
     width: 20vw;
     height: 20vw;
     transform: skewX(-45deg);
@@ -134,7 +143,15 @@ html{
     0% { left: 40vw;}
     100% { left: 140vw;}
 }
-
+/*Trapecio blanco arriba*/
+@keyframes w_bot {
+    0% { top: -90vh;}
+    100% { top: 0vh;}
+}
+@keyframes w_top {
+    0% { top: 0vh;}
+    100% { top: -90vh;}
+}
 
 
 
