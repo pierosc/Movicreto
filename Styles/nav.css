@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Poppins", sans-serif;
 }
 :root{
   --orange-color: #d5872c;
@@ -72,6 +73,12 @@ html{
     transform: skewX(20deg);
     left: 140vw;
 }
+.fondo-textura {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    filter: opacity(30%);
+}
 .white-top{
     position: absolute;
     top: -90vh;
@@ -105,6 +112,10 @@ html{
 @keyframes aparition {
     0% {    filter:opacity(0);}
     100% {    filter:opacity(1);}
+}
+@keyframes desaparition {
+    0% {    filter:opacity(1);}
+    100% {    filter:opacity(0);}
 }
 /**********************************************/
 /*Triangulo blanco del inicio*/
@@ -152,9 +163,31 @@ html{
     0% { top: 0vh;}
     100% { top: -90vh;}
 }
+/*-----------Contenido de paginas---------------*/
 
-
-
+.nosotros{
+    position: absolute;
+    display: none;
+    top: 10vh;
+    left: 60vw;
+}
+.nosotros h1{
+    font-size: 35px;
+    padding-bottom: 10vh;
+}
+.nosotros h3{
+    font-size: 30px;
+}
+.nosotros h4{
+    font-size: 25px;
+    padding-bottom: 5vh;
+}
+.servicios{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 20vw;
+}
 
 /*-----------NAV----------------*/
 
