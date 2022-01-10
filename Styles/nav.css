@@ -76,22 +76,23 @@ html{
     left: 140vw;
     z-index: -1;
 }
+.white-right-end{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 70vw;
+    height: 90vh;
+    transform: skewX(10deg);
+    left: 140vw;
+    z-index: -1;
+}
 .fondo-textura {
     width: 100%;
     height: 100%;
     object-fit:cover;
     filter: opacity(30%);
 }
-.white-top{
-    position: absolute;
-    top: -90vh;
-    width: 70vw;
-    height: 90vh;
-    left: 10vw;
-    border-right: 5vw solid transparent;
-    border-left: 5vw solid transparent;
-    border-top: 90vh solid white;
-}
+
 .orange-left{
     background-color: var(--orange-color);
     position: absolute;
@@ -111,14 +112,17 @@ html{
     animation: aparition 4s;
     z-index: 2;
 }
-.cover-logo-prueba{
+.logo-end{
     position: absolute;
-    left: -4vw;
-    top: 15vh;
-    width: 40vw;
-    animation: aparition 4s;
-    z-index: 2;
-    filter: brightness(20%);
+    left: 100vw;
+    top: 0vh;
+    width: 50vw;
+    z-index: -1;
+}
+.logo-textura {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 .cover-logo-name{
     position: absolute;
@@ -219,7 +223,14 @@ html{
             transform: scale(0);
             filter: opacity(0);}
 }
-
+@keyframes logo-end-in {
+    0% { left: 100vw;}
+    100% { left: -5vw;}
+}
+@keyframes logo-end-out {
+    0% { left: -5vw;}
+    100% { left: 100vw;}
+}
 /*-----------Contenido de paginas---------------*/
 
 .nosotros{
@@ -278,6 +289,22 @@ html{
 .servicios h3{
     font-size: 20px;
     padding-bottom: 3.5vh;
+}
+
+.contactanos{
+    color: var(--gray-color);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 50vw;
+    top: 10vh;
+    width: 40vw;
+    align-items: center;
+}
+.contactanos h1{
+    font-size: 35px;
+    padding-bottom: 10vh;
+    text-align: center;
 }
 /*-----------NAV----------------*/
 
