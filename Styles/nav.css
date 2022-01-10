@@ -62,7 +62,7 @@ html{
     width: 70vw;
     height: 90vh;
     transform: skewX(-20deg);
-    left: -150vw;
+    left: -85vw;
     z-index: -1;
 }
 

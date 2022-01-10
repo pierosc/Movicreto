@@ -1,4 +1,6 @@
 //HEADER NAV//
+const begin = 0;
+
 const inicio = document.getElementById("inicio");
 const nosotros = document.getElementById("nosotros");
 const servicios = document.getElementById("servicios");
@@ -17,6 +19,13 @@ const pag_nos = document.querySelector(".nosotros");
 const pag_ser = document.querySelector(".servicios");
 
 const nav = document.querySelector(".nav-container");
+
+white_left.style.animation = "wl_left 0s normal both";
+
+white_top.style.animation = "w_top 0s normal both";
+
+white_right.style.animation = "wr_right 0s normal both";
+
 
 inicio.addEventListener("click", () =>{
     homewhite.style.animation = "homein 2s normal both";
@@ -38,11 +47,15 @@ inicio.addEventListener("click", () =>{
 });
   
 nosotros.addEventListener("click", () =>{
+
     homewhite.style.animation = "homeout 2s normal both";
     homeorg.style.animation = "homeouto 2s normal both";
+
     white_left.style.animation = "wl_left 2s normal both";
-    white_right.style.animation = "wr_left 2s normal both";
+
     white_top.style.animation = "w_top 1.5s normal both";
+
+    white_right.style.animation = "wr_left 2s normal both";
 
     logo.style.animation = "logoout 1.5s normal both";
     logo_name.style.animation = "logo-nameout 1.5s normal both";
@@ -54,9 +67,11 @@ nosotros.addEventListener("click", () =>{
     pag_nos.style.animation = "aparition 2s normal both";
 
     nav.style.animation = "navbot 2s normal both";
+
 });
   
 servicios.addEventListener("click", () =>{
+    console.log(white_left);
     homewhite.style.animation = "homeout 2s normal both";
     homeorg.style.animation = "homeouto 2s normal both";
     white_left.style.animation = "wl_right 2s normal both";
@@ -76,6 +91,7 @@ servicios.addEventListener("click", () =>{
 });  
   
 contactanos.addEventListener("click", () =>{
+    console.log(white_left);
     homewhite.style.animation = "homeout 2s normal both";
     homeorg.style.animation = "homeouto 2s normal both";
     white_left.style.animation = "wl_left 2s normal both";
