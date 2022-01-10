@@ -10,6 +10,9 @@ const white_left = document.querySelector(".white-left");
 const white_right = document.querySelector(".white-right");
 const white_top = document.querySelector(".white-top");
 
+const logo = document.querySelector(".cover-logo");
+const logo_name = document.querySelector(".cover-logo-name");
+
 const pag_nos = document.querySelector(".nosotros");
 const pag_ser = document.querySelector(".servicios");
 
@@ -21,6 +24,16 @@ inicio.addEventListener("click", () =>{
     white_left.style.animation = "wl_left 2s normal both";
     white_right.style.animation = "wr_right 2s normal both";
     white_top.style.animation = "w_top 1.5s normal both";
+
+    logo.style.animation = "logoin 1.8s normal both";
+    logo_name.style.animation = "logo-namein 1.8s normal both";
+
+    pag_nos.style.animation = "desaparition 1s normal both";
+    pag_nos.style.display = "none";
+
+    pag_ser.style.animation = "desaparition 1s normal both";
+    pag_ser.style.display = "none";
+
     nav.style.animation = "navtop 2s normal both";
 });
   
@@ -30,6 +43,9 @@ nosotros.addEventListener("click", () =>{
     white_left.style.animation = "wl_left 2s normal both";
     white_right.style.animation = "wr_left 2s normal both";
     white_top.style.animation = "w_top 1.5s normal both";
+
+    logo.style.animation = "logoout 1.5s normal both";
+    logo_name.style.animation = "logo-nameout 1.5s normal both";
 
     pag_ser.style.animation = "desaparition 1s normal both";
     pag_ser.style.display = "none";
@@ -47,6 +63,9 @@ servicios.addEventListener("click", () =>{
     white_right.style.animation = "wr_right 2s normal both";
     white_top.style.animation = "w_top 1.5s normal both";
 
+    logo.style.animation = "logoout 1.5s normal both";
+    logo_name.style.animation = "logo-nameout 1.5s normal both";
+
     pag_nos.style.animation = "desaparition 1s normal both";
     pag_nos.style.display = "none";
     
@@ -63,7 +82,14 @@ contactanos.addEventListener("click", () =>{
     white_right.style.animation = "wr_right 2s normal both";
     white_top.style.animation = "w_bot 2.5s normal both";
 
+    logo.style.animation = "logoout 1.5s normal both";
+    logo_name.style.animation = "logo-nameout 1.5s normal both";
+
+    pag_nos.style.animation = "desaparition 1s normal both";
     pag_nos.style.display = "none";
+
+    pag_ser.style.animation = "desaparition 1s normal both";
+    pag_ser.style.display = "none";
 
     nav.style.animation = "navbot 2s normal both";
 });
