@@ -49,7 +49,10 @@ inicio.addEventListener("click", () =>{
 
 
     nav.style.animation = "navtop 2s normal both";
-    begin == "inicio";
+    inicio.className="nav_active";
+    nosotros.className="nav";
+    servicios.className="nav";
+    contactanos.className="nav";
 });
   
 nosotros.addEventListener("click", () =>{
@@ -77,7 +80,10 @@ nosotros.addEventListener("click", () =>{
     pag_nos.style.animation = "aparition 2s normal both";
 
     nav.style.animation = "navbot 2s normal both";
-    begin == "nosotros";
+    inicio.className="nav";
+    nosotros.className="nav_active";
+    servicios.className="nav";
+    contactanos.className="nav";
 });
   
 servicios.addEventListener("click", () =>{
@@ -102,7 +108,10 @@ servicios.addEventListener("click", () =>{
     pag_ser.style.animation = "aparition 2s normal both";
 
     nav.style.animation = "navbot 2s normal both";
-    begin == "servicios";
+    inicio.className="nav";
+    nosotros.className="nav";
+    servicios.className="nav_active";
+    contactanos.className="nav";
 });  
   
 contactanos.addEventListener("click", () =>{
@@ -128,5 +137,8 @@ contactanos.addEventListener("click", () =>{
     pag_cont.style.display = "flex";
 
     nav.style.animation = "navbot 2s normal both";
-    begin == "contactanos";
+    inicio.className="nav";
+    nosotros.className="nav";
+    servicios.className="nav";
+    contactanos.className="nav_active";
 });

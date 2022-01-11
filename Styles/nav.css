@@ -77,7 +77,7 @@ html{
     z-index: -1;
 }
 .white-right-end{
-    background-color: white;
+    background-color: var(--orange-color);
     position: absolute;
     top: 0;
     width: 70vw;
@@ -292,7 +292,7 @@ html{
 }
 
 .contactanos{
-    color: var(--gray-color);
+    color: white;
     display: none;
     flex-direction: column;
     position: absolute;
