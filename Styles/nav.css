@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
     font-family: "Poppins", sans-serif;
+  /*  @font-face {
+        font-family: Movicreto;
+        src: url() format("truetype");
+    }*/
 }
 :root{
   --orange-color: #d5872c;
@@ -9,12 +13,12 @@
 }
 
 html{
-    font: Andor Console, monospace;
+   /* font: Movicreto;*/
     scroll-behavior: smooth;
 }
 
 .cover {
-    font-family: "AndorRegular", sans-serif;
+    font-family: "AndorRegular";
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -226,12 +230,12 @@ html{
             filter: opacity(0);}
 }
 @keyframes logo-end-in {
-    0% { left: 100vw;}
+    0% { left: -100vw;}
     100% { left: -6.5vw;}
 }
 @keyframes logo-end-out {
     0% { left: -6.5vw;}
-    100% { left: 100vw;}
+    100% { left: -100vw;}
 }
 /*-----------Contenido de paginas---------------*/
 
