@@ -29,11 +29,11 @@
     <div class="logo-end">
         
         <img class="logo-textura" src="Media/MOCKUP.jpg"></img>
-        <!--
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.42682472334764!2d-78.51172519839116!3d-9.116972516926728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1641791422306!5m2!1ses-419!2spe"  style="border:0;width: 30vw;height: 85vh;" allowfullscreen="" loading="lazy"></iframe>
-           --> 
+        
+                    
     </div>
     <div class="white-right-end">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.42682472334764!2d-78.51172519839116!3d-9.116972516926728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1641791422306!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </div>
     <!-- <div class="orange-bot"></div> -->
@@ -99,27 +99,39 @@
         </div>
     </section>
     <section>
+        <!--
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.42682472334764!2d-78.51172519839116!3d-9.116972516926728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1641791422306!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        -->
         <div class="contactanos">
             <h1>Movicreto</h1>
-            <!--<div class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.42682472334764!2d-78.51172519839116!3d-9.116972516926728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1641791422306!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            -->
-            <div id="wrapper">
+
+            <div id="wrapper" class="formulario-cuadro">
                 <h2>Envíe su formulario</h2>
-                <form action="">
+                <form action="https://formsubmit.co/859336287743573642f198bd5362ad2f" method="POST">
+                    </div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="name">
+
+                    <label for="email">Correo Electronico </label>
+                    <input type="email" name="email">
+
+                    <!--<label for="subject">Asunto</label>
+                    <input type="text" name="subject">-->
+
+                    <label for="comments">Mensaje </label>
+                    <textarea name="comments" cols="15" rows="5"></textarea>
+
+                    <input type="submit" value="Enviar">
+
+                    <input type="hidden" name="_cc" value="another@email.com">
+                    <input type="hidden" name="_next" value="http://localhost:8000">
+                    <input type="hidden" name="_captcha" value="false">
+
+                <div class="contacto">
                 </form>
-                </div>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="name">
-                <label for="email">Correo Electronico </label>
-                <input type="email" name="email">
-                <label for="subject">Asunto</label>
-                <input type="text" name="subject">
-                <label for="comments">Comentarios </label>
-                <textarea name="comments" cols="15" rows="5"></textarea>
-                <input type="submit" value="Enviar">
-            <div class="contacto">
+                
                
                 <a target="blank" href="https://api.whatsapp.com/send?phone=51950010037"><span class="iconify" data-icon="cib:whatsapp"></span></a>
                 

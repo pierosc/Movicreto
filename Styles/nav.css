@@ -298,25 +298,44 @@ html{
 }
 
 .contactanos{
+    background-color: var(--gray-color);
     color: white;
     display: none;
     flex-direction: column;
     position: absolute;
     left: 50vw;
-    top: 10vh;
+    top: 4vh;
     width: 40vw;
     align-items: center;
-   
+    border-radius: 5vh;
 }
 .contactanos h1{
     font-size: 35px;
-    padding-bottom: 5vh;
+    /*padding-bottom: 5vh;
+    padding-top: 5vh;*/
     text-align: center;
 }
+.contactanos h2{
+    /*padding-bottom: 4vh;*/
 
+    text-align: center;
+}
 .maps iframe{
-    width: 60vw;
-    height: 50vh;
+    margin-top: 50vh;
+    width: 5vw;
+    height: 5vh;
+}
+
+.contactanos input{
+   /* margin-bottom: 2vh;*/
+    min-width: 10vw;
+}
+.contactanos textarea{
+    min-width: 20vw;
+    max-width: 20vw;
+    min-height: 15vh;
+    max-height: 15vh;
+  /*  margin-bottom: 2vh;*/
 }
 /*-----------NAV----------------*/
 
