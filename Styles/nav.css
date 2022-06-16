@@ -327,13 +327,13 @@ html{
     text-align: center;
 }
 .contactanos h2{
-    /*padding-bottom: 4vh;*/
-
+    padding-top: 5vh;
+    padding-bottom: 4vh;
     text-align: center;
 }
 
 .contactanos input{
-   /* margin-bottom: 2vh;*/
+   margin-bottom: 2vh;
     min-width: 10vw;
 }
 .contactanos textarea{
@@ -341,7 +341,7 @@ html{
     max-width: 20vw;
     min-height: 15vh;
     max-height: 15vh;
-  /*  margin-bottom: 2vh;*/
+   margin-bottom: 2vh;
 }
 /*-----------NAV----------------*/
 
@@ -350,7 +350,7 @@ html{
     bottom: 5vh;
     z-index: 1;
     width: 100%;
-    box-shadow:   5px 5px 15px rgb(0 0 0 / 30%);
+    box-shadow:   5px 5px 15px rgb(0 0 0 / 70%);
 }
 
 nav ul {
