@@ -83,13 +83,23 @@ html{
 .white-right-end{
     background-color: var(--orange-color);
     position: absolute;
-    top: 0;
+    display: flexbox;
+    top: 0vh;
     width: 70vw;
-    height: 90vh;
+    height: 45vh;
    /* transform: skewX(10deg);*/
     left: 140vw;
-    z-index: -1;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
 }
+
+.white-right-end iframe{
+    margin: 1vh;
+    width: 59vw;
+    height: 43vh; 
+}
+
 .fondo-textura {
     width: 100%;
     height: 100%;
@@ -303,11 +313,12 @@ html{
     display: none;
     flex-direction: column;
     position: absolute;
-    left: 50vw;
-    top: 4vh;
-    width: 40vw;
+    left: 40vw;
+    top: 45vh;
+    width: 60vw;
+    min-height:45vh ;
     align-items: center;
-    border-radius: 5vh;
+    /* border-radius: 5vh; */
 }
 .contactanos h1{
     font-size: 35px;
@@ -319,11 +330,6 @@ html{
     /*padding-bottom: 4vh;*/
 
     text-align: center;
-}
-.maps iframe{
-    margin-top: 50vh;
-    width: 5vw;
-    height: 5vh;
 }
 
 .contactanos input{
@@ -344,6 +350,7 @@ html{
     bottom: 5vh;
     z-index: 1;
     width: 100%;
+    box-shadow:   5px 5px 15px rgb(0 0 0 / 30%);
 }
 
 nav ul {
