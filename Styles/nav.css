@@ -1,11 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "Poppins", sans-serif;
-  /*  @font-face {
+    /* font-family: "Andor"; */
+    /* sans-serif; */
+   @font-face {
         font-family: Movicreto;
-        src: url() format("truetype");
-    }*/
+        src: url(AndorRegular-PersonalUse.ttf) format("truetype");
+    }
 }
 :root{
   --orange-color: #d5872c;
