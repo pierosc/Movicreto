@@ -5,7 +5,7 @@
     /* sans-serif; */
    @font-face {
         font-family: Movicreto;
-        src: url(AndorRegular-PersonalUse.ttf) format("truetype");
+        src: url('AndorRegular-PersonalUse.ttf') format("truetype");
     }
 }
 :root{
