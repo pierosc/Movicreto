@@ -1,8 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* font-family: "Andor"; */
-    /* sans-serif; */
+    font-family: "Andor", sans-serif;
    @font-face {
         font-family: Movicreto;
         src: url('AndorRegular-PersonalUse.ttf') format("truetype");
@@ -35,6 +34,17 @@ html{
     z-index: -1;
     object-fit: cover;
     filter: opacity(60%);
+}
+.cover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    /* filter: opacity(90%); */
+    filter:brightness(80%);
 }
 /***********************************************************************/
 
@@ -258,7 +268,7 @@ html{
     left: 50vw;
 }
 .nosotros h1{
-    font-size: 35px;
+    font-size: 3vh;
     padding-bottom: 10vh;
 }
 .lista-nosotros{
@@ -277,10 +287,10 @@ html{
     font-size: 70px;
 }
 .nosotros h3{
-    font-size: 30px;
+    font-size: 3vh;
 }
 .nosotros h4{
-    font-size: 25px;
+    font-size: 2vh;
     padding-bottom: 5vh;
 }
 
@@ -292,7 +302,7 @@ html{
     left: 8vw;
 }
 .servicios h1{
-    font-size: 35px;
+    font-size: 3vh;
     padding-bottom: 10vh;
     text-align: center;
 }
@@ -304,7 +314,7 @@ html{
     text-align: center;
 }
 .servicios h3{
-    font-size: 20px;
+    font-size: 2vh;
     padding-bottom: 3.5vh;
 }
 
@@ -427,4 +437,34 @@ nav ul li a:hover{
 nav ul li a {
   padding: 2vh 0 2vh;
 }
+}
+
+@media only screen and (max-device-width: 980px){
+    .nosotros{
+        position:relative;
+        display:block;
+    }
+    .servicios{
+        position: relative;
+        display: block;
+    }
+    .nav-container{
+        width:100%;
+        position: -webkit-sticky;
+    }
+    nav ul li a {
+        display:block;
+        font-size: 3vh;
+    }
+    .white-right-end{
+        position: relative;
+        display: block;
+        left: 0vw;
+    }
+    .white-right{
+        position: relative;
+        display: block;
+        left: 0vw;
+    }
+
 }
