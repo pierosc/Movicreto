@@ -440,6 +440,12 @@ nav ul li a {
 }
 
 @media only screen and (max-device-width: 980px){
+    /* body{
+        overflow: hidden;
+    } */
+    .cover {
+        position: relative;
+    } 
     .nosotros{
         position:relative;
         display:block;
@@ -448,23 +454,28 @@ nav ul li a {
         position: relative;
         display: block;
     }
+    .contactanos{
+        position: relative;
+        display: block;
+    }
     .nav-container{
         width:100%;
-        position: -webkit-sticky;
+        position:-webkit-sticky;
     }
-    nav ul li a {
-        display:block;
-        font-size: 3vh;
+    nav ul {
+        display: inline-block;
+    }
+    nav ul li{
+        float:left;
+        min-width: 25%;
     }
     .white-right-end{
-        position: relative;
-        display: block;
-        left: 0vw;
+        display: none;
     }
     .white-right{
-        position: relative;
-        display: block;
-        left: 0vw;
+        display: none;
     }
-
+    .white-left{
+        display: none;
+    }
 }
