@@ -368,7 +368,7 @@ html{
     max-width: 40vw;
     min-height: 10vh;
     max-height: 10vh;
-   margin-bottom: 2vh;
+    margin-bottom: 2vh;
 }
 /*-----------NAV----------------*/
 
@@ -468,6 +468,9 @@ nav ul li a {
     nav ul li{
         float:left;
         min-width: 25%;
+    }
+    nav ul li a {
+        font-size: 2vh;
     }
     .white-right-end{
         display: none;
